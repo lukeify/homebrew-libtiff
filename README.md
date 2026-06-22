@@ -1,5 +1,13 @@
 # Lukeify Libtiff
 
+## Why this tap exists
+
+Homebrew core builds `libtiff` without LERC support. This tap provides an
+otherwise identical `libtiff` that adds a `liblerc` dependency and configures
+with `--enable-liblerc`, so TIFF and GeoTIFF files using LERC compression can
+be read and written. It is intended for raster and DEM workflows where
+LERC-compressed GeoTIFFs are common.
+
 ## How do I install these formulae?
 
 `brew install lukeify/libtiff/<formula>`

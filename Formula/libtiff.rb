@@ -1,3 +1,6 @@
+# Homebrew core builds libtiff without LERC. This formula is otherwise identical
+# but adds liblerc and --enable-liblerc, so LERC-compressed TIFF/GeoTIFF files
+# can be read and written (needed for raster and DEM workflows).
 class Libtiff < Formula
   desc "TIFF library and utilities"
   homepage "https://libtiff.gitlab.io/libtiff/"
